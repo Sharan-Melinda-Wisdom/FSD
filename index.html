@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeHub Web App</title>
+    <script src="../CIA2/tailwind.css"></script&gt"></script>
+    <link rel="stylesheet" href="../CIA2/font-awesome.min.css" />
+</head>
+
+<body class="bg-gradient-to-br from-brown-200 via-white-100 to-black-100 min-h-screen font-sans"> 
+
+    <!-- Header and navigation-->
+    <header class="bg-white-600 text-black">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold"><i class="fas fa-fire-burner mr-2"></i>Coffee Hub</h1>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="#" class="hover:text-yellow-300"><b>Home</b></a></li>
+        <li><a href="coffee.html" class="hover:text-yellow-300 "><b>Coffee Cup</b></a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300"><b>Contact</b></a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Hero section -->
+    <section class="bg-cover bg-center h-80 flex items-center justify-center text-white text-center" style="background-image: url('../CIA2/img/10awuevh.png');">
+        <div>
+            <h2 class="text-4xl font-bold mb-2">Explore the Coffee World</h2>
+            <p class="text-lg">Discover new tastes with us</p>
+        </div>
+    </section>
+
+    <section>
+        <br><br><br>
+        <h3 class="text-xl font-bold mb-4 ">Watch to feel our auroma</h3>
+        <video controls width="70%">
+            <source src="../CIA2/Set2 Video.mp4" type="video/mp4" />
+            <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" />
+            Your browser does not support this video content
+        </video>
+        
+    </section>
+   
+    
+
+    <footer class="text-center mt-10 p-4 bg-gray-800 text-white">
+        &copy; 1997, Coffee Hub. All rights reserved.
+    </footer>
+    
+    <script>
+        // Geolocation
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          const lat = position.coords.latitude.toFixed(4);
+          const long = position.coords.longitude.toFixed(4);
+          document.getElementById("location").textContent = `Your Location: Latitude ${lat}, Longitude ${long}`;
+        }, function () {
+          document.getElementById("location").textContent = "Location permission denied.";
+        });
+      } else {
+        document.getElementById("location").textContent = "Geolocation not supported.";
+      }
+    
+    </script>
+
+</body>
+</html>
+
+
+
+  
+
+  
+  
+
